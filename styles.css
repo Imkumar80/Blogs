@@ -1,0 +1,297 @@
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --panel-alt: #eef4ff;
+  --text: #1a2433;
+  --muted: #5d6776;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --border: #dfe7f3;
+  --shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 72px 0 48px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  margin-bottom: 18px;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: var(--muted);
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.button:hover,
+.post-card a:hover,
+.hero-card a:hover {
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.hero-card,
+.post-card,
+.about-inner {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 28px;
+}
+
+.card-label,
+.post-meta {
+  display: inline-block;
+  background: var(--panel-alt);
+  color: var(--primary-dark);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: var(--muted);
+}
+
+.hero-card a,
+.post-card a,
+.article-body a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.posts {
+  padding: 32px 0 64px;
+}
+
+.section-header {
+  margin-bottom: 26px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.post-card {
+  padding: 24px;
+}
+
+.post-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.post-card p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.about {
+  padding: 0 0 80px;
+}
+
+.about-inner {
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.about-inner p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  color: var(--muted);
+}
+
+.article-shell {
+  padding: 56px 0 80px;
+}
+
+.article-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: clamp(24px, 4vw, 52px);
+}
+
+.article-card h1 {
+  margin-bottom: 14px;
+}
+
+.article-meta {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.article-body {
+  font-size: 1.05rem;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol {
+  margin-bottom: 1.2rem;
+  color: var(--text);
+}
+
+.article-body h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+@media (max-width: 760px) {
+  .hero-inner,
+  .about-inner,
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+}
