@@ -2,8 +2,6 @@ const postGrid = document.querySelector("#post-grid");
 const postCount = document.querySelector("#post-count");
 const searchInput = document.querySelector("#post-search");
 const categoryFilters = document.querySelector("#category-filters");
-const featuredTitle = document.querySelector("#featured-title");
-const featuredExcerpt = document.querySelector("#featured-excerpt");
 let posts = [];
 let activeCategory = "All";
 
@@ -106,17 +104,6 @@ async function loadPosts() {
       })
       .sort((first, second) => second.date.localeCompare(first.date));
 
-    if (posts.length > 0) {
-      const latestPost = posts[0];
-      const featuredLink = createElement("a", "text-link", latestPost.title);
-      featuredLink.href = latestPost.url;
-      featuredTitle.replaceChildren(featuredLink);
-      featuredExcerpt.textContent = latestPost.excerpt;
-    } else {
-      featuredTitle.textContent = "Your first post is waiting";
-      featuredExcerpt.textContent = "Add a post entry to posts/posts.json to feature it here.";
-    }
-
     renderFilters();
     renderPosts();
   } catch (error) {
@@ -124,7 +111,6 @@ async function loadPosts() {
       createElement("p", "empty-state", "Posts could not be loaded. Check posts/posts.json and refresh the page."),
     );
     postCount.textContent = "Post index unavailable";
-    featuredTitle.textContent = "Latest post unavailable";
     console.error("Blog post index failed to load:", error);
   }
 }

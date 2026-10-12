@@ -1,6 +1,6 @@
-# Kumar's Weekly Blog
+# Kumar's Portfolio & Blog
 
-A small static blog for GitHub Pages, with a dark editorial theme, searchable posts, and category and tag filters.
+A personal portfolio and weekly blog for GitHub Pages. The homepage features AI projects, a KannadaSLM work-in-progress showcase, Kumar's profile, and searchable writing.
 
 ## Add a weekly post
 
@@ -43,7 +43,7 @@ Then visit `http://localhost:8000`.
 
 ## Files
 
-- `index.html` and `styles.css` — homepage and responsive theme
+- `index.html` and `styles.css` — portfolio homepage and responsive theme
 - `app.js` — homepage search, category filtering, and post rendering
 - `assets/kumar-profile.png` — profile photo displayed in the About section
 - `posts/posts.json` — homepage index of post titles, dates, categories, tags, and links

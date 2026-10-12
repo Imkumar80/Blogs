@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Weekly notes on software, building, and the lessons learned along the way."
+      content="Kumar's portfolio: AI and language model projects, KannadaSLM in progress, and weekly notes on building."
     />
     <meta name="theme-color" content="#0b0e13" />
-    <title>Kumar — Weekly Notes</title>
+    <title>Kumar — AI Builder & Engineer</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
@@ -20,6 +20,7 @@
           <span class="brand-name">Kumar's Notes</span>
         </a>
         <nav class="nav-links" aria-label="Main navigation">
+          <a href="#projects">Projects</a>
           <a href="#latest">Writing</a>
           <a href="#about">About</a>
         </nav>
@@ -30,18 +31,147 @@
       <section class="hero">
         <div class="container hero-inner">
           <div>
-            <p class="eyebrow">A weekly journal by Kumar</p>
-            <h1>Learning out loud. <span>One week at a time.</span></h1>
+            <p class="eyebrow">Final-year engineering student · AWS Student Builder Center Campus Lead</p>
+            <h1>Exploring AI. <span>Building what I learn.</span></h1>
             <p class="intro">
-              Notes from building software, figuring things out, and getting a little better at the work each week.
+              I experiment with language models, make them more efficient, and build projects that bring AI ideas to life.
+              Currently working on a Kannada language model.
             </p>
-            <a class="button primary" href="#latest">Explore the writing <span aria-hidden="true">&nbsp;↓</span></a>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">Explore my projects <span aria-hidden="true">&nbsp;↓</span></a>
+              <a
+                class="button secondary"
+                href="https://www.linkedin.com/in/kumar-r-shet-4712552a1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Connect on LinkedIn</a
+              >
+            </div>
           </div>
-          <aside class="hero-note" aria-label="Latest post">
-            <span class="note-label">Start here · latest note</span>
-            <strong id="featured-title">Loading latest post…</strong>
-            <p id="featured-excerpt"></p>
+          <aside class="hero-note" aria-label="Current focus">
+            <span class="note-label">Currently building</span>
+            <strong>KannadaSLM</strong>
+            <p>Adapting open-source language models to better understand and generate Kannada.</p>
           </aside>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Selected work</p>
+              <h2>Projects & experiments</h2>
+            </div>
+            <span class="post-count">Models, tools, and ongoing research</span>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-type">Open model</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3>Qwen3.5-4B-AWQ</h3>
+              <p>
+                AWQ INT4 quantization of Qwen3.5-4B, calibrated with 512 OpenPlatypus samples.
+              </p>
+              <dl class="project-stats project-stats-2x2">
+                <div class="project-stat">
+                  <dt>quantized model</dt>
+                  <dd>3.13 GB</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>HF downloads · Oct 2026</dt>
+                  <dd>1,512</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>smaller on disk</dt>
+                  <dd>2.56×</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>5-task 0-shot average</dt>
+                  <dd>68.67%</dd>
+                </div>
+              </dl>
+              <p class="project-caveat">
+                Standalone benchmark average; a matched BF16 comparison has not been run.
+              </p>
+              <a
+                class="text-link"
+                href="https://huggingface.co/kumar2235/Qwen3.5-4B-AWQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on Hugging Face ↗</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-type">Open source</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3>Fashion Search Engine</h3>
+              <p>
+                A natural-language image search pipeline using semantic normalization, vector retrieval, and visual reranking.
+              </p>
+              <dl class="project-stats">
+                <div class="project-stat">
+                  <dt>fashion images indexed</dt>
+                  <dd>3,200</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>BGE-M3 vectors</dt>
+                  <dd>1,024-D</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>candidates reranked</dt>
+                  <dd>Top 100</dd>
+                </div>
+              </dl>
+              <a
+                class="text-link"
+                href="https://github.com/Imkumar80/Fashion_search_engine"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View project on GitHub ↗</a
+              >
+            </article>
+
+            <article class="project-card project-card-featured">
+              <div class="project-topline">
+                <span class="project-type">Language models · Kannada</span>
+                <span class="project-status">In progress</span>
+              </div>
+              <h3>KannadaSLM</h3>
+              <p>
+                Developing KannadaSLM by adapting open-source LLMs through continued pre-training on Kannada text,
+                supervised fine-tuning, tokenizer experiments, and knowledge distillation.
+              </p>
+              <p>
+                I'm evaluating language generation quality, repetition, and instruction-following to understand what
+                makes Kannada models more reliable.
+              </p>
+              <dl class="project-stats">
+                <div class="project-stat">
+                  <dt>adaptation tracks</dt>
+                  <dd>4</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>evaluation dimensions</dt>
+                  <dd>3</dd>
+                </div>
+              </dl>
+              <p class="project-caveat">
+                Scope counts, not benchmark results. Model scores are not published yet.
+              </p>
+              <span class="project-note">Work in progress — more coming soon.</span>
+            </article>
+          </div>
+          <p class="project-disclaimer">
+            Model and retrieval figures are reported in the linked project documentation. KannadaSLM figures describe
+            current experiment scope; evaluation is ongoing.
+          </p>
         </div>
       </section>
 
@@ -49,8 +179,8 @@
         <div class="container">
           <div class="section-header">
             <div>
-              <p class="section-kicker">The journal</p>
-              <h2>Recent writing</h2>
+              <p class="section-kicker">Notes from the process</p>
+              <h2>Weekly writing</h2>
             </div>
             <span class="post-count" id="post-count" aria-live="polite"></span>
           </div>
@@ -116,7 +246,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="current-year"></span> Kumar's Notes</p>
+        <p>© <span id="current-year"></span> Kumar</p>
         <p>Made for the long game.</p>
         <nav class="social-links" aria-label="Social profiles">
           <a href="https://github.com/Imkumar80" target="_blank" rel="noopener noreferrer">GitHub</a>
