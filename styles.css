@@ -239,7 +239,10 @@ h3 {
 }
 
 .page-hero {
-  padding: clamp(62px, 9vw, 105px) 0 34px;
+  display: flex;
+  min-height: 320px;
+  align-items: center;
+  padding: 64px 0 52px;
 }
 
 .page-hero h1 {
@@ -382,7 +385,7 @@ h3 {
 }
 
 .projects-page {
-  padding-top: 20px;
+  padding-top: 44px;
 }
 
 .project-card p {
@@ -765,6 +768,11 @@ h3 {
 
   .home-hero {
     min-height: 0;
+  }
+
+  .page-hero {
+    min-height: 270px;
+    padding: 56px 0 40px;
   }
 
   .hero-note {
