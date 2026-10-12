@@ -393,10 +393,18 @@ h3 {
   align-items: start;
 }
 
-.about-inner > p {
+.about-inner > p,
+.about-copy {
   max-width: 550px;
-  margin: 0;
   color: var(--muted);
+}
+
+.about-copy p {
+  margin: 0 0 1rem;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer {
