@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Starting the blog",
+    "excerpt": "Why consistency matters more than perfection when publishing ideas online.",
+    "date": "2026-10-13",
+    "category": "Writing",
+    "tags": ["habits", "learning", "consistency"],
+    "url": "posts/week-1.html"
+  },
+  {
+    "title": "Building in public",
+    "excerpt": "Lessons from sharing work as it evolves, not only when it is polished.",
+    "date": "2026-10-20",
+    "category": "Building",
+    "tags": ["feedback", "process", "learning"],
+    "url": "posts/week-2.html"
+  }
+]

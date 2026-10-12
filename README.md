@@ -1,18 +1,39 @@
-﻿# Kumar's Weekly Blog
+# Kumar's Weekly Blog
 
-This repository is a simple static blog site designed for GitHub Pages.
+A small static blog for GitHub Pages, with a dark editorial theme, searchable posts, and category and tag filters.
+
+## Add a weekly post
+
+1. Copy `posts/template.html` and save the copy with a new filename, such as `posts/week-3.html`.
+2. Replace the title, summary, category, week number, date, tags, and sample article text in the copied file.
+3. Add an entry at the end of `posts/posts.json` (remember the comma after the previous entry):
+
+   ```json
+   {
+     "title": "Your post title",
+     "excerpt": "A short summary shown on the homepage.",
+     "date": "2026-10-27",
+     "category": "Engineering",
+     "tags": ["learning", "projects"],
+     "url": "posts/week-3.html"
+   }
+   ```
+
+4. Add the same category and tags to your article page, then commit and push. The homepage sorts posts newest-first and updates its search and category filters automatically.
+
+Use dates in `YYYY-MM-DD` format. Keep each post URL relative to the repository root as shown above.
 
 ## Publish on GitHub Pages
 
 1. Push this repository to GitHub.
-2. Open the repository on GitHub.
-3. Go to `Settings` → `Pages`.
-4. Set the source to `GitHub Actions`.
-5. The workflow in `.github/workflows/deploy-pages.yml` will publish the site automatically.
+2. In the repository, open **Settings → Pages** and select **GitHub Actions** as the source.
+3. The workflow in `.github/workflows/deploy-pages.yml` publishes on pushes to `main` or `master`.
 
-## Local preview
+The repository's Pages URL is `https://imkumar80.github.io/Blogs/`.
 
-Open `index.html` in a browser or run a small local web server:
+## Preview locally
+
+The homepage loads its post index with `fetch`, so serve the files over HTTP instead of opening `index.html` directly. From the repository root, run:
 
 ```bash
 python -m http.server 8000
@@ -20,12 +41,13 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Structure
+## Files
 
-- `index.html` — home page
-- `posts/` — individual weekly blog posts
-- `styles.css` — site styling
+- `index.html` and `styles.css` — homepage and responsive theme
+- `app.js` — homepage search, category filtering, and post rendering
+- `posts/posts.json` — homepage index of post titles, dates, categories, tags, and links
+- `posts/template.html` — copy this to start a new article
+- `posts/` — individual weekly articles
+## Social profiles
 
-The deployed URL will be:
-
-`https://imkumar80.github.io/Blogs/`
+The footer links to Kumar's [GitHub](https://github.com/Imkumar80), [Hugging Face](https://huggingface.co/kumar2235), [X](https://x.com/KumarShet192579), and [LinkedIn](https://www.linkedin.com/in/kumar-r-shet-4712552a1/) profiles.

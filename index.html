@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Weekly blog posts by Kumar about software, learning, and product building."
+      content="Weekly notes on software, building, and the lessons learned along the way."
     />
-    <title>Kumar's Weekly Blog</title>
+    <meta name="theme-color" content="#0b0e13" />
+    <title>Kumar — Weekly Notes</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="index.html">Kumar's Weekly Blog</a>
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Kumar's Notes</span>
+        </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="#latest">Latest</a>
+          <a href="#latest">Writing</a>
           <a href="#about">About</a>
         </nav>
       </div>
@@ -25,48 +30,50 @@
       <section class="hero">
         <div class="container hero-inner">
           <div>
-            <p class="eyebrow">Weekly writing</p>
-            <h1>Thoughts on engineering, growth, and building better products.</h1>
+            <p class="eyebrow">A weekly journal by Kumar</p>
+            <h1>Learning out loud. <span>One week at a time.</span></h1>
             <p class="intro">
-              I write every week about software, product thinking, and the lessons I learn while building.
+              Notes from building software, figuring things out, and getting a little better at the work each week.
             </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#latest">Read latest posts</a>
-              <a class="button secondary" href="mailto:you@example.com">Contact</a>
-            </div>
+            <a class="button primary" href="#latest">Explore the writing <span aria-hidden="true">&nbsp;↓</span></a>
           </div>
-          <div class="hero-card">
-            <span class="card-label">This week</span>
-            <h2>Week 1: Starting the blog</h2>
-            <p>
-              A simple introduction to how this blog works and why I decided to start writing consistently.
-            </p>
-            <a href="posts/week-1.html">Read article →</a>
-          </div>
+          <aside class="hero-note" aria-label="Latest post">
+            <span class="note-label">Start here · latest note</span>
+            <strong id="featured-title">Loading latest post…</strong>
+            <p id="featured-excerpt"></p>
+          </aside>
         </div>
       </section>
 
       <section id="latest" class="posts">
         <div class="container">
           <div class="section-header">
-            <p class="eyebrow">Latest posts</p>
-            <h2>Weekly notes</h2>
+            <div>
+              <p class="section-kicker">The journal</p>
+              <h2>Recent writing</h2>
+            </div>
+            <span class="post-count" id="post-count" aria-live="polite"></span>
           </div>
 
-          <div class="post-grid">
-            <article class="post-card">
-              <span class="post-meta">Week 1</span>
-              <h3>Starting the blog</h3>
-              <p>Why consistency matters more than perfection when publishing ideas online.</p>
-              <a href="posts/week-1.html">Read more</a>
-            </article>
+          <div class="post-tools">
+            <label>
+              <span class="section-kicker">Search posts</span>
+              <input
+                class="search-input"
+                id="post-search"
+                type="search"
+                placeholder="Try a title, topic, or tag…"
+                autocomplete="off"
+              />
+            </label>
+            <div>
+              <p class="section-kicker">Browse by category</p>
+              <div class="filter-list" id="category-filters" aria-label="Filter posts by category"></div>
+            </div>
+          </div>
 
-            <article class="post-card">
-              <span class="post-meta">Week 2</span>
-              <h3>Building in public</h3>
-              <p>Lessons from sharing work as it evolves, not only when it is polished.</p>
-              <a href="posts/week-2.html">Read more</a>
-            </article>
+          <div class="post-grid" id="post-grid" aria-live="polite">
+            <p class="status-message">Loading posts…</p>
           </div>
         </div>
       </section>
@@ -74,12 +81,12 @@
       <section id="about" class="about">
         <div class="container about-inner">
           <div>
-            <p class="eyebrow">About</p>
-            <h2>Writing to learn, share, and improve.</h2>
+            <p class="section-kicker">A little context</p>
+            <h2>Writing to make sense of the work.</h2>
           </div>
           <p>
-            This blog is a personal space for weekly learning notes, design ideas, engineering reflections,
-            and the progress behind the projects I build.
+            This is my corner of the internet for weekly learning notes, engineering reflections, and the
+            progress behind the things I build. The aim is simple: stay curious, share honestly, and keep showing up.
           </p>
         </div>
       </section>
@@ -87,7 +94,14 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© 2026 Kumar's Weekly Blog</p>
+        <p>© <span id="current-year"></span> Kumar's Notes</p>
+        <p>Made for the long game.</p>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://github.com/Imkumar80" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://huggingface.co/kumar2235" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+          <a href="https://x.com/KumarShet192579" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://www.linkedin.com/in/kumar-r-shet-4712552a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
       </div>
     </footer>
   </body>

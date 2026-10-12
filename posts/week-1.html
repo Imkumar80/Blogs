@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starting the blog | Kumar's Weekly Blog</title>
+    <title>Starting the blog | Kumar's Notes</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="../index.html">Kumar's Weekly Blog</a>
+        <a class="brand" href="../index.html">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Kumar's Notes</span>
+        </a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="../index.html#latest">Posts</a>
           <a href="../index.html#about">About</a>
@@ -20,9 +23,16 @@
     <main class="article-shell">
       <div class="container">
         <article class="article-card">
-          <span class="card-label">Week 1</span>
+          <p class="eyebrow">Writing · Week 1</p>
           <h1>Starting the blog</h1>
-          <p class="article-meta">Published on Oct 13, 2026</p>
+          <p class="article-meta">
+            <time datetime="2026-10-13">Published October 13, 2026</time>
+          </p>
+          <div class="tag-list article-tags" aria-label="Tags">
+            <span class="tag">#habits</span>
+            <span class="tag">#learning</span>
+            <span class="tag">#consistency</span>
+          </div>
 
           <div class="article-body">
             <p>
@@ -55,5 +65,17 @@
         </article>
       </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Kumar's Notes</p>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://github.com/Imkumar80" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://huggingface.co/kumar2235" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+          <a href="https://x.com/KumarShet192579" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://www.linkedin.com/in/kumar-r-shet-4712552a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
