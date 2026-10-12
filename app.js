@@ -116,5 +116,4 @@ async function loadPosts() {
 }
 
 searchInput.addEventListener("input", renderPosts);
-document.querySelector("#current-year").textContent = String(new Date().getFullYear());
 loadPosts();

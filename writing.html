@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weekly writing by Kumar about AI, software, experiments, and lessons learned while building."
+    />
+    <meta name="theme-color" content="#0b0e13" />
+    <title>Writing — Kumar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Kumar</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="projects.html">Projects</a>
+          <a href="writing.html" aria-current="page">Writing</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Notes from the process</p>
+          <h1>Weekly <span>writing.</span></h1>
+          <p class="intro">What I build, what I learn, what goes wrong, and the interesting things I discover along the way.</p>
+        </div>
+      </section>
+
+      <section class="posts writing-page">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">The journal</p>
+              <h2>All notes</h2>
+            </div>
+            <span class="post-count" id="post-count" aria-live="polite"></span>
+          </div>
+
+          <div class="post-tools">
+            <label>
+              <span class="section-kicker">Search posts</span>
+              <input
+                class="search-input"
+                id="post-search"
+                type="search"
+                placeholder="Try a title, topic, or tag…"
+                autocomplete="off"
+              />
+            </label>
+            <div>
+              <p class="section-kicker">Browse by category</p>
+              <div class="filter-list" id="category-filters" aria-label="Filter posts by category"></div>
+            </div>
+          </div>
+
+          <div class="post-grid" id="post-grid" aria-live="polite">
+            <p class="status-message">Loading posts…</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span class="current-year"></span> Kumar</p>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://github.com/Imkumar80" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://huggingface.co/kumar2235" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+          <a href="https://x.com/KumarShet192579" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://www.linkedin.com/in/kumar-r-shet-4712552a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

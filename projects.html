@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI and open-source projects by Kumar, including Qwen3.5-4B-AWQ, Fashion Search Engine, and KannadaSLM."
+    />
+    <meta name="theme-color" content="#0b0e13" />
+    <title>Projects — Kumar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Kumar</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="writing.html">Writing</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Selected work</p>
+          <h1>Projects & <span>experiments.</span></h1>
+          <p class="intro">Models, tools, and research experiments—with the numbers and context behind them.</p>
+        </div>
+      </section>
+
+      <section class="projects projects-page">
+        <div class="container">
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-type">Open model</span>
+                <span class="project-number">01</span>
+              </div>
+              <h2>Qwen3.5-4B-AWQ</h2>
+              <p>AWQ INT4 quantization of Qwen3.5-4B, calibrated with 512 OpenPlatypus samples.</p>
+              <dl class="project-stats project-stats-2x2">
+                <div class="project-stat">
+                  <dt>quantized model</dt>
+                  <dd>3.13 GB</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>HF downloads · Oct 2026</dt>
+                  <dd>1,512</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>smaller on disk</dt>
+                  <dd>2.56×</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>5-task 0-shot average</dt>
+                  <dd>68.67%</dd>
+                </div>
+              </dl>
+              <p class="project-caveat">Standalone benchmark average; a matched BF16 comparison has not been run.</p>
+              <a
+                class="text-link"
+                href="https://huggingface.co/kumar2235/Qwen3.5-4B-AWQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on Hugging Face ↗</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-type">Open source</span>
+                <span class="project-number">02</span>
+              </div>
+              <h2>Fashion Search Engine</h2>
+              <p>
+                A natural-language image search pipeline using semantic normalization, vector retrieval, and visual reranking.
+              </p>
+              <dl class="project-stats">
+                <div class="project-stat">
+                  <dt>fashion images indexed</dt>
+                  <dd>3,200</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>BGE-M3 vectors</dt>
+                  <dd>1,024-D</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>candidates reranked</dt>
+                  <dd>Top 100</dd>
+                </div>
+              </dl>
+              <a
+                class="text-link"
+                href="https://github.com/Imkumar80/Fashion_search_engine"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View project on GitHub ↗</a
+              >
+            </article>
+
+            <article class="project-card project-card-featured" id="kannadaslm">
+              <div class="project-topline">
+                <span class="project-type">Language models · Kannada</span>
+                <span class="project-status">In progress</span>
+              </div>
+              <h2>KannadaSLM</h2>
+              <p>
+                Developing KannadaSLM by adapting open-source LLMs through continued pre-training on Kannada text,
+                supervised fine-tuning, tokenizer experiments, and knowledge distillation.
+              </p>
+              <p>
+                I'm evaluating language generation quality, repetition, and instruction-following to understand what
+                makes Kannada models more reliable.
+              </p>
+              <dl class="project-stats">
+                <div class="project-stat">
+                  <dt>adaptation tracks</dt>
+                  <dd>4</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>evaluation dimensions</dt>
+                  <dd>3</dd>
+                </div>
+              </dl>
+              <p class="project-caveat">Scope counts, not benchmark results. Model scores are not published yet.</p>
+              <span class="project-note">Work in progress — more coming soon.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span class="current-year"></span> Kumar</p>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://github.com/Imkumar80" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://huggingface.co/kumar2235" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+          <a href="https://x.com/KumarShet192579" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://www.linkedin.com/in/kumar-r-shet-4712552a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

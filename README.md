@@ -1,6 +1,6 @@
 # Kumar's Portfolio & Blog
 
-A personal portfolio and weekly blog for GitHub Pages. The homepage features AI projects, a KannadaSLM work-in-progress showcase, Kumar's profile, and searchable writing.
+A personal portfolio and weekly blog for GitHub Pages. The home page, Projects, Writing, and About each have their own page.
 
 ## Add a weekly post
 
@@ -19,7 +19,7 @@ A personal portfolio and weekly blog for GitHub Pages. The homepage features AI 
    }
    ```
 
-4. Add the same category and tags to your article page, then commit and push. The homepage sorts posts newest-first and updates its search and category filters automatically.
+4. Add the same category and tags to your article page, then commit and push. The Writing page sorts posts newest-first and updates its search and category filters automatically.
 
 Use dates in `YYYY-MM-DD` format. Keep each post URL relative to the repository root as shown above.
 
@@ -33,7 +33,7 @@ The repository's Pages URL is `https://imkumar80.github.io/Blogs/`.
 
 ## Preview locally
 
-The homepage loads its post index with `fetch`, so serve the files over HTTP instead of opening `index.html` directly. From the repository root, run:
+The Writing page loads its post index with `fetch`, so serve the files over HTTP instead of opening an HTML file directly. From the repository root, run:
 
 ```bash
 python -m http.server 8000
@@ -44,9 +44,13 @@ Then visit `http://localhost:8000`.
 ## Files
 
 - `index.html` and `styles.css` — portfolio homepage and responsive theme
-- `app.js` — homepage search, category filtering, and post rendering
-- `assets/kumar-profile.png` — profile photo displayed in the About section
-- `posts/posts.json` — homepage index of post titles, dates, categories, tags, and links
+- `projects.html` — project showcase and documented metrics
+- `writing.html` — searchable, filterable weekly blog index
+- `about.html` — profile, biography, and photo
+- `site.js` — shared dynamic footer year
+- `app.js` — Writing page search, category filtering, and post rendering
+- `assets/kumar-profile.png` — profile photo displayed on the About page
+- `posts/posts.json` — Writing page index of post titles, dates, categories, tags, and links
 - `posts/template.html` — copy this to start a new article
 - `posts/` — individual weekly articles
 ## Social profiles
