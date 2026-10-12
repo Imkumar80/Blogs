@@ -45,6 +45,7 @@ Then visit `http://localhost:8000`.
 
 - `index.html` and `styles.css` — homepage and responsive theme
 - `app.js` — homepage search, category filtering, and post rendering
+- `assets/kumar-profile.png` — profile photo displayed in the About section
 - `posts/posts.json` — homepage index of post titles, dates, categories, tags, and links
 - `posts/template.html` — copy this to start a new article
 - `posts/` — individual weekly articles

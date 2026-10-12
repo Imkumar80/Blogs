@@ -393,6 +393,24 @@ h3 {
   align-items: start;
 }
 
+.about-content {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+  align-items: start;
+  gap: 25px;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-raised);
+  object-fit: cover;
+  object-position: center 35%;
+}
+
 .about-inner > p,
 .about-copy {
   max-width: 550px;
@@ -528,6 +546,11 @@ h3 {
   .about-inner {
     gap: 20px;
   }
+
+  .about-content {
+    grid-template-columns: minmax(105px, 145px) minmax(0, 1fr);
+    gap: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -551,6 +574,14 @@ h3 {
     align-items: start;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: min(190px, 65%);
   }
 }
 
