@@ -1,18 +1,10 @@
 [
   {
-    "title": "Starting the blog",
-    "excerpt": "Why consistency matters more than perfection when publishing ideas online.",
-    "date": "2026-10-13",
-    "category": "Writing",
-    "tags": ["habits", "learning", "consistency"],
-    "url": "posts/week-1.html"
-  },
-  {
-    "title": "Building in public",
-    "excerpt": "Lessons from sharing work as it evolves, not only when it is polished.",
-    "date": "2026-10-20",
-    "category": "Building",
-    "tags": ["feedback", "process", "learning"],
-    "url": "posts/week-2.html"
+    "title": "The Tokenizer Tax on Indic Languages: What I Learned While Building Kannada-SLM",
+    "excerpt": "Understanding tokenization, BPE, Unicode, and why representing Kannada efficiently matters for language models.",
+    "date": "2026-10-15",
+    "category": "AI & Language Models",
+    "tags": ["tokenizer", "Indic languages", "Kannada", "KannadaSLM"],
+    "url": "https://medium.com/@kumarrshet701/the-tokenizer-tax-on-indic-languages-what-i-learned-while-building-kannada-slm-2c054fbd1759"
   }
 ]

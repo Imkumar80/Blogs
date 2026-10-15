@@ -73,6 +73,10 @@ function renderPosts() {
 
     const link = createElement("a", "text-link", "Read article →");
     link.href = post.url;
+    if (new URL(post.url, window.location.href).origin !== window.location.origin) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
     card.append(topline, title, excerpt, tags, link);
     postGrid.append(card);
   }

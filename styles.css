@@ -318,6 +318,11 @@ h3 {
   margin-top: auto;
 }
 
+.home-featured-post {
+  max-width: 760px;
+  margin: 18px auto 0;
+}
+
 .projects {
   padding: 68px 0 88px;
   border-top: 1px solid var(--border);
